@@ -1,4 +1,6 @@
 
+"""Graphical user interface for the diagnostic questionnaire."""
+
 import os
 import tkinter as tk
 from tkinter import ttk
@@ -7,14 +9,17 @@ from storage_json import load_questions, load_diseases, load_model
 
 
 class DiagnosisUI:
-    def __init__(self, master):
+    """Interactive Tkinter UI driving ``DiagnosisEngine``."""
+
+    def __init__(self, master, *, debug: bool | None = None):
         self.master = master
         self.questions = load_questions()
         self.diseases = load_diseases()
         self.model = load_model()
         # ``load_questions`` now returns ``Question`` objects
         self.question_ids = [q.qid for q in self.questions]
-        debug = bool(os.getenv("AIVO_DEBUG"))
+        if debug is None:
+            debug = bool(os.getenv("AIVO_DEBUG"))
         self.engine = DiagnosisEngine(
             self.diseases,
             self.question_ids,

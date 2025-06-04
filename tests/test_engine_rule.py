@@ -1,5 +1,7 @@
 import os
 import sys
+import logging
+import math
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))  # noqa: E402
 
 import pytest  # noqa: E402
@@ -38,3 +40,15 @@ def test_select_best_question_progression(engine):
     engine.answer_question(first, 'Yes')
     second = engine.select_best_question()
     assert second == 'pain'
+
+
+def test_entropy_with_zero_scores():
+    eng = DiagnosisEngine(['D1', 'D2'], ['q1'], {'D1': {}, 'D2': {}})
+    ent = eng.compute_entropy()
+    assert ent == pytest.approx(math.log2(2))
+
+
+def test_model_missing_weights_logs_warning(caplog):
+    caplog.set_level(logging.WARNING)
+    DiagnosisEngine(['D1'], ['q1', 'q2'], {'D1': {'q1': {'Yes': 1}}})
+    assert any('missing weights' in r.message for r in caplog.records)

@@ -1,13 +1,22 @@
+"""Question model classes."""
 
+from dataclasses import dataclass, field
+from typing import List, Optional
+
+
+@dataclass
 class Question:
-    def __init__(self, qid, text, qtype, choices=None):
-        self.qid = qid
-        self.text = text
-        self.qtype = qtype
-        self.choices = choices or []
+    """Represent a single question."""
+
+    qid: str
+    text: str
+    qtype: str
+    choices: Optional[List[str]] = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, data):
+        """Instantiate from a dictionary produced by ``to_dict``."""
+
         return cls(
             data["id"],
             data["text"],
@@ -16,6 +25,8 @@ class Question:
         )
 
     def to_dict(self):
+        """Return ``dict`` representation for JSON serialization."""
+
         d = {
             "id": self.qid,
             "text": self.text,
