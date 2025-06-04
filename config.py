@@ -27,3 +27,10 @@ DIAGNOSIS_MODEL_FILE = _get_env_or_default(
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 768
 THEME_BG = "#f0f0f0"
+
+# Font configuration used across the Tkinter interfaces. These
+# consolidate the various hard-coded font tuples previously scattered
+# throughout the UI modules which made the look and feel inconsistent.
+FONT_LARGE = ("Arial", 24)
+FONT_MEDIUM = ("Arial", 16)
+FONT_SMALL = ("Arial", 14)

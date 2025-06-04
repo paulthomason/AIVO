@@ -4,6 +4,8 @@
 import os
 import tkinter as tk
 from tkinter import ttk
+
+import config
 from engine_rule import DiagnosisEngine
 from storage_json import load_questions, load_diseases, load_model
 
@@ -35,40 +37,61 @@ class DiagnosisUI:
         self.master.title("Vet Ophthalmology Diagnosis")
         self.master.geometry("800x480")
         self.master.resizable(False, False)
-        self.question_label = tk.Label(
-            self.master, text="", font=("Arial", 24), wraplength=760
+        self.master.configure(bg=config.THEME_BG, padx=20, pady=20)
+
+        self.style = ttk.Style(self.master)
+        self.style.configure(
+            "Question.TLabel",
+            font=config.FONT_LARGE,
+            background=config.THEME_BG,
         )
-        self.question_label.pack(pady=40)
-        self.button_frame = tk.Frame(self.master)
-        self.button_frame.pack(pady=10)
-        self.progress_label = tk.Label(
+        self.style.configure("Answer.TButton", font=config.FONT_MEDIUM)
+        self.style.configure(
+            "Result.TLabel",
+            font=config.FONT_MEDIUM,
+            background=config.THEME_BG,
+        )
+        self.style.configure(
+            "Small.TLabel",
+            font=config.FONT_SMALL,
+            background=config.THEME_BG,
+        )
+
+        self.question_label = ttk.Label(
+            self.master, text="", style="Question.TLabel", wraplength=760
+        )
+        self.question_label.pack(pady=(10, 20))
+        self.button_frame = ttk.Frame(self.master)
+        self.button_frame.pack(pady=(0, 10))
+        self.progress_label = ttk.Label(
             self.master,
             text="",
-            font=("Arial", 16),
+            style="Result.TLabel",
         )
-        self.progress_label.pack(pady=10)
-        self.qprogress_label = tk.Label(
+        self.progress_label.pack(pady=(0, 10))
+        self.qprogress_label = ttk.Label(
             self.master,
             text="",
-            font=("Arial", 14),
+            style="Small.TLabel",
         )
         self.qprogress_label.pack()
         self.progress_bar = ttk.Progressbar(
             self.master, length=760, mode="determinate"
         )
         self.progress_bar.pack(pady=5)
-        self.result_label = tk.Label(
+        self.result_label = ttk.Label(
             self.master,
             text="",
-            font=("Arial", 18, "bold"),
+            style="Result.TLabel",
         )
         self.result_label.pack(pady=20)
-        self.restart_button = tk.Button(
+        self.restart_button = ttk.Button(
             self.master,
             text="Restart",
-            font=("Arial", 14),
             command=self.restart,
+            style="Answer.TButton",
         )
+        self.restart_button.pack_forget()
 
     def clear_buttons(self):
         for widget in self.button_frame.winfo_children():
@@ -91,15 +114,13 @@ class DiagnosisUI:
         self.clear_buttons()
         options = self.engine.get_possible_answers(question_id)
         for ans in options:
-            button = tk.Button(
+            button = ttk.Button(
                 self.button_frame,
                 text=ans,
-                font=("Arial", 20),
-                width=14,
-                height=2,
                 command=lambda a=ans: self.record_answer(a),
+                style="Answer.TButton",
             )
-            button.pack(side=tk.LEFT, padx=10)
+            button.pack(side=tk.LEFT, padx=5, pady=5)
 
     def record_answer(self, answer):
         qid = self.current_question
