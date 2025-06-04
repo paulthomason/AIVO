@@ -19,7 +19,24 @@ class AdminUI(tk.Tk):
         self.questions = storage.load_questions()
         self.diseases = storage.load_diseases()
         self.diagnosis_model = storage.load_model()
+        self.create_menu()
         self.create_widgets()
+
+    def create_menu(self):
+        """Create the application menu bar."""
+        menubar = tk.Menu(self)
+
+        file_menu = tk.Menu(menubar, tearoff=False)
+        file_menu.add_command(label="Save All", command=self.save_all)
+        file_menu.add_separator()
+        file_menu.add_command(label="Exit", command=self.destroy)
+        menubar.add_cascade(label="File", menu=file_menu)
+
+        help_menu = tk.Menu(menubar, tearoff=False)
+        help_menu.add_command(label="About", command=self.show_about)
+        menubar.add_cascade(label="Help", menu=help_menu)
+
+        self.config(menu=menubar)
 
     def create_widgets(self):
         nb = ttk.Notebook(self)
@@ -27,6 +44,13 @@ class AdminUI(tk.Tk):
         # Questions tab
         frm_q = tk.Frame(nb, bg=config.THEME_BG)
         nb.add(frm_q, text="Questions")
+        search_frame = tk.Frame(frm_q, bg=config.THEME_BG)
+        search_frame.pack(fill=tk.X, padx=6, pady=(6, 0))
+        tk.Label(search_frame, text="Search:", bg=config.THEME_BG).pack(side=tk.LEFT)
+        self.q_search_var = tk.StringVar()
+        tk.Entry(search_frame, textvariable=self.q_search_var, font=("Arial", 14)).pack(side=tk.LEFT, fill=tk.X, expand=True)
+        self.q_search_var.trace_add("write", lambda *a: self.refresh_q_list())
+
         self.q_listbox = tk.Listbox(frm_q, font=("Arial", 16), width=55)
         self.q_listbox.pack(
             side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4
@@ -49,6 +73,18 @@ class AdminUI(tk.Tk):
             btns_q,
             text="Edit",
             command=self.edit_q,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_q,
+            text="Move Up",
+            command=self.move_q_up,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_q,
+            text="Move Down",
+            command=self.move_q_down,
             font=("Arial", 16),
         ).pack(fill=tk.X)
         tk.Button(
@@ -82,6 +118,18 @@ class AdminUI(tk.Tk):
             btns_d,
             text="Edit",
             command=self.edit_d,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_d,
+            text="Move Up",
+            command=self.move_d_up,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_d,
+            text="Move Down",
+            command=self.move_d_down,
             font=("Arial", 16),
         ).pack(fill=tk.X)
         tk.Button(
@@ -124,7 +172,10 @@ class AdminUI(tk.Tk):
 
     def refresh_q_list(self):
         self.q_listbox.delete(0, tk.END)
+        search = self.q_search_var.get().lower() if hasattr(self, "q_search_var") else ""
         for q in self.questions:
+            if search and search not in q.qid.lower() and search not in q.text.lower():
+                continue
             txt = f"{q.qid}: {q.text} ({q.qtype})"
             self.q_listbox.insert(tk.END, txt)
 
@@ -167,8 +218,28 @@ class AdminUI(tk.Tk):
         idx = self.q_listbox.curselection()
         if not idx:
             return
+        if not messagebox.askyesno("Confirm", "Delete selected question?"):
+            return
         del self.questions[idx[0]]
         self.refresh_q_list()
+
+    def move_q_up(self):
+        idx = self.q_listbox.curselection()
+        if not idx or idx[0] == 0:
+            return
+        i = idx[0]
+        self.questions[i - 1], self.questions[i] = self.questions[i], self.questions[i - 1]
+        self.refresh_q_list()
+        self.q_listbox.select_set(i - 1)
+
+    def move_q_down(self):
+        idx = self.q_listbox.curselection()
+        if not idx or idx[0] >= len(self.questions) - 1:
+            return
+        i = idx[0]
+        self.questions[i + 1], self.questions[i] = self.questions[i], self.questions[i + 1]
+        self.refresh_q_list()
+        self.q_listbox.select_set(i + 1)
 
     def add_d(self):
         d = simpledialog.askstring("Add Disease", "Disease name:")
@@ -190,8 +261,28 @@ class AdminUI(tk.Tk):
         idx = self.d_listbox.curselection()
         if not idx:
             return
+        if not messagebox.askyesno("Confirm", "Delete selected disease?"):
+            return
         del self.diseases[idx[0]]
         self.refresh_d_list()
+
+    def move_d_up(self):
+        idx = self.d_listbox.curselection()
+        if not idx or idx[0] == 0:
+            return
+        i = idx[0]
+        self.diseases[i - 1], self.diseases[i] = self.diseases[i], self.diseases[i - 1]
+        self.refresh_d_list()
+        self.d_listbox.select_set(i - 1)
+
+    def move_d_down(self):
+        idx = self.d_listbox.curselection()
+        if not idx or idx[0] >= len(self.diseases) - 1:
+            return
+        i = idx[0]
+        self.diseases[i + 1], self.diseases[i] = self.diseases[i], self.diseases[i + 1]
+        self.refresh_d_list()
+        self.d_listbox.select_set(i + 1)
 
     def refresh_weight_q(self):
         for widget in self.ans_frame.winfo_children():
@@ -234,3 +325,17 @@ class AdminUI(tk.Tk):
         self.storage.save_diseases(self.diseases)
         self.storage.save_model(self.diagnosis_model)
         messagebox.showinfo("Saved", "All data saved!")
+
+    def show_about(self):
+        """Display an about dialog."""
+        messagebox.showinfo(
+            "About",
+            "Admin panel for managing questions, diseases and weights",
+        )
+
+
+if __name__ == "__main__":
+    import storage_json
+
+    app = AdminUI(storage_json)
+    app.mainloop()

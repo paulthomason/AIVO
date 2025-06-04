@@ -1,4 +1,5 @@
 
+import os
 import tkinter as tk
 from tkinter import ttk
 from engine_rule import DiagnosisEngine
@@ -13,10 +14,12 @@ class DiagnosisUI:
         self.model = load_model()
         # ``load_questions`` now returns ``Question`` objects
         self.question_ids = [q.qid for q in self.questions]
+        debug = bool(os.getenv("AIVO_DEBUG"))
         self.engine = DiagnosisEngine(
             self.diseases,
             self.question_ids,
             self.model,
+            debug=debug,
         )
         self.current_question = None
         self.total_questions = len(self.question_ids)
