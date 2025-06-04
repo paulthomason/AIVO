@@ -60,6 +60,7 @@ class AdminUI(tk.Tk):
         self.create_questions_tab()
         self.create_diseases_tab()
         self.create_weights_tab()
+        self.create_training_tab()
         tk.Button(self, text="Save All", command=self.save_all, font=config.FONT_SMALL).pack(pady=5)
 
     def create_questions_tab(self):
@@ -153,6 +154,83 @@ class AdminUI(tk.Tk):
         self.ans_frame.pack(pady=10)
         tk.Button(frm_w, text="Set Weight", command=self.set_weight, font=config.FONT_SMALL).pack()
         tk.Button(frm_w, text="Tips", command=self.show_w_tips, font=config.FONT_SMALL).pack(pady=(10, 0))
+
+    def create_training_tab(self):
+        """Create a Training tab for rating question associations."""
+        frm_t = tk.Frame(self.nb, bg=config.THEME_BG)
+        self.nb.add(frm_t, text="Training")
+
+        tk.Label(
+            frm_t,
+            text="Rate how strongly a question indicates a disease (0 = none, 5 = strong).",
+            font=config.FONT_SMALL,
+            bg=config.THEME_BG,
+            wraplength=900,
+            justify=tk.LEFT,
+        ).pack(padx=6, pady=(6, 10))
+
+        top = tk.Frame(frm_t, bg=config.THEME_BG)
+        top.pack(pady=5)
+        tk.Label(top, text="Disease:", bg=config.THEME_BG, font=config.FONT_SMALL).pack(side=tk.LEFT)
+        self.train_disease = ttk.Combobox(top, values=self.diseases, font=config.FONT_SMALL, width=35)
+        self.train_disease.pack(side=tk.LEFT, padx=5)
+        self.train_disease.bind("<<ComboboxSelected>>", lambda e: self.update_training_prompt())
+        tk.Label(top, text="Question:", bg=config.THEME_BG, font=config.FONT_SMALL).pack(side=tk.LEFT)
+        self.train_question = ttk.Combobox(top, values=[q.qid for q in self.questions], font=config.FONT_SMALL, width=20)
+        self.train_question.pack(side=tk.LEFT, padx=5)
+        self.train_question.bind("<<ComboboxSelected>>", lambda e: self.update_training_prompt())
+
+        self.training_prompt_lbl = tk.Label(frm_t, text="", font=config.FONT_MEDIUM, bg=config.THEME_BG, wraplength=900, justify=tk.LEFT)
+        self.training_prompt_lbl.pack(pady=10)
+
+        self.rating_var = tk.IntVar(value=0)
+        self.rating_scale = tk.Scale(frm_t, from_=0, to=5, orient=tk.HORIZONTAL, variable=self.rating_var, length=400)
+        self.rating_scale.pack()
+
+        tk.Button(frm_t, text="Record Rating", command=self.save_training_rating, font=config.FONT_SMALL).pack(pady=(5, 0))
+        tk.Button(frm_t, text="Tips", command=self.show_training_tips, font=config.FONT_SMALL).pack(pady=(10, 0))
+
+    def update_training_prompt(self):
+        """Update the text prompt based on combobox selection."""
+        d = self.train_disease.get()
+        qid = self.train_question.get()
+        if not d or not qid:
+            self.training_prompt_lbl.config(text="")
+            return
+        q = next((x for x in self.questions if x.qid == qid), None)
+        if not q:
+            self.training_prompt_lbl.config(text="")
+            return
+        self.training_prompt_lbl.config(text=f"Is {d} characterized by {q.text}?")
+
+    def save_training_rating(self):
+        """Persist the training rating back into the model."""
+        d = self.train_disease.get()
+        qid = self.train_question.get()
+        if not d or not qid:
+            return
+        rating = self.rating_var.get()
+        if d not in self.diagnosis_model:
+            self.diagnosis_model[d] = {}
+        if qid not in self.diagnosis_model[d]:
+            self.diagnosis_model[d][qid] = {}
+        q = next((x for x in self.questions if x.qid == qid), None)
+        if q and q.qtype == "yesno":
+            key = "Yes"
+        elif q and q.choices:
+            key = q.choices[0]
+        else:
+            key = "Yes"
+        self.diagnosis_model[d][qid][key] = rating
+        messagebox.showinfo("Saved", "Rating recorded.")
+
+    def show_training_tips(self):
+        """Show help for the Training tab."""
+        messagebox.showinfo(
+            "Training Tips",
+            "Select a disease and question then drag the slider to set how strongly the question suggests the disease."
+            " Click Record Rating to store the value and Save All when finished.",
+        )
 
     def refresh_q_list(self):
         """Refresh the list of questions, applying any search filter."""
