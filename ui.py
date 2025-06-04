@@ -1,5 +1,5 @@
 
-from tkinter import *
+from tkinter import Label, Button, Frame, LEFT
 from engine_rule import DiagnosisEngine
 from storage_json import load_questions, load_diseases, load_model
 
