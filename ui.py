@@ -72,32 +72,36 @@ class DiagnosisUI:
         self.question_label = ttk.Label(
             self.master, text="", style="Question.TLabel", wraplength=760
         )
-        self.question_label.pack(pady=(10, 20))
-        self.button_frame = ttk.Frame(self.master)
+        self.question_label.pack(fill=tk.BOTH, expand=True, pady=(10, 20))
+
+        self.bottom_frame = ttk.Frame(self.master)
+        self.bottom_frame.pack(side=tk.BOTTOM, fill=tk.X)
+
+        self.button_frame = ttk.Frame(self.bottom_frame)
         self.button_frame.pack(pady=(0, 10))
         self.progress_label = ttk.Label(
-            self.master,
+            self.bottom_frame,
             text="",
             style="Result.TLabel",
         )
         self.progress_label.pack(pady=(0, 10))
         self.qprogress_label = ttk.Label(
-            self.master,
+            self.bottom_frame,
             text="",
             style="Small.TLabel",
         )
         self.qprogress_label.pack()
         self.progress_bar = ttk.Progressbar(
-            self.master, length=760, mode="determinate"
+            self.bottom_frame, length=760, mode="determinate"
         )
         self.progress_bar.pack(pady=5)
         self.result_label = ttk.Label(
-            self.master,
+            self.bottom_frame,
             text="",
             style="Result.TLabel",
         )
         self.result_label.pack(pady=20)
-        self.nav_frame = ttk.Frame(self.master)
+        self.nav_frame = ttk.Frame(self.bottom_frame)
         self.nav_frame.pack(pady=10)
         self.back_button = ttk.Button(
             self.nav_frame,
