@@ -9,6 +9,27 @@ def _get_env_or_default(name: str, default: str) -> str:
     return os.getenv(name, default)
 
 
+def get_env_int(name: str, default: int) -> int:
+    """Return ``name`` converted to ``int`` or ``default`` on error."""
+
+    val = os.getenv(name)
+    if val is None:
+        return default
+    try:
+        return int(val)
+    except ValueError:
+        return default
+
+
+def get_env_bool(name: str, default: bool = False) -> bool:
+    """Return ``name`` interpreted as a boolean."""
+
+    val = os.getenv(name)
+    if val is None:
+        return default
+    return val.lower() in {"1", "true", "yes", "on"}
+
+
 BASE_DIR = os.path.dirname(__file__)
 DATA_DIR = _get_env_or_default("AIVO_DATA_DIR", os.path.join(BASE_DIR, "data"))
 QUESTIONS_FILE = _get_env_or_default(
@@ -29,12 +50,8 @@ SCREEN_HEIGHT = 768
 # Size of the diagnosis questionnaire window.  Can be overridden with
 # ``AIVO_DIAG_SCREEN_WIDTH`` and ``AIVO_DIAG_SCREEN_HEIGHT`` environment
 # variables which is helpful when running on small displays.
-DIAG_SCREEN_WIDTH = int(
-    _get_env_or_default("AIVO_DIAG_SCREEN_WIDTH", "800")
-)
-DIAG_SCREEN_HEIGHT = int(
-    _get_env_or_default("AIVO_DIAG_SCREEN_HEIGHT", "480")
-)
+DIAG_SCREEN_WIDTH = get_env_int("AIVO_DIAG_SCREEN_WIDTH", 800)
+DIAG_SCREEN_HEIGHT = get_env_int("AIVO_DIAG_SCREEN_HEIGHT", 480)
 THEME_BG = "#f0f0f0"
 
 # Font configuration used across the Tkinter interfaces. These
