@@ -161,5 +161,305 @@
     "id": "breed_predisposition",
     "text": "Is the dog a breed predisposed to ocular disease (e.g., brachycephalic)?",
     "type": "yesno"
+  },
+  {
+    "id": "ocular_trauma_history",
+    "text": "Has the dog experienced recent eye trauma?",
+    "type": "yesno"
+  },
+  {
+    "id": "excessive_blinking",
+    "text": "Is the dog blinking more than usual?",
+    "type": "yesno"
+  },
+  {
+    "id": "cloudy_lens",
+    "text": "Is the lens of the eye cloudy?",
+    "type": "yesno"
+  },
+  {
+    "id": "recent_surgery",
+    "text": "Has the dog recently undergone eye surgery?",
+    "type": "yesno"
+  },
+  {
+    "id": "head_tilt",
+    "text": "Is the dog tilting its head frequently?",
+    "type": "yesno"
+  },
+  {
+    "id": "night_blindness",
+    "text": "Does the dog struggle to see in low light?",
+    "type": "yesno"
+  },
+  {
+    "id": "behavior_change",
+    "text": "Have you noticed behavioral changes (agitation, lethargy)?",
+    "type": "yesno"
+  },
+  {
+    "id": "ocular_pressure_test",
+    "text": "Has intraocular pressure tested high?",
+    "type": "yesno"
+  },
+  {
+    "id": "tear_staining",
+    "text": "Is there staining of fur around the eyes from tears?",
+    "type": "yesno"
+  },
+  {
+    "id": "sudden_blindness",
+    "text": "Did vision loss occur suddenly?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_dryness",
+    "text": "Are the eyes unusually dry?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_crusting",
+    "text": "Is there crusting around the eyes?",
+    "type": "yesno"
+  },
+  {
+    "id": "squinting",
+    "text": "Is the dog squinting?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_rubbing",
+    "text": "Is the dog rubbing or pawing at its eyes?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_bulging",
+    "text": "Are the eyes bulging outward?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_shrinking",
+    "text": "Are the eyes sunken or smaller than normal?",
+    "type": "yesno"
+  },
+  {
+    "id": "unequal_pupil",
+    "text": "Do the dog's pupils appear different in size?",
+    "type": "yesno"
+  },
+  {
+    "id": "lens_dislocation",
+    "text": "Has the lens moved from its normal position?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_spasm",
+    "text": "Are the eyelids twitching or spasming?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_flickering",
+    "text": "Is there rapid flickering of the eyes?",
+    "type": "yesno"
+  },
+  {
+    "id": "double_eyelashes",
+    "text": "Does the dog have a double row of eyelashes?",
+    "type": "yesno"
+  },
+  {
+    "id": "tear_drops",
+    "text": "Are tear drops falling continuously?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_bloodshot",
+    "text": "Are there prominent blood vessels on the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_growth",
+    "text": "Is there a growth or mass on the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_bruising",
+    "text": "Is there bruising around the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_discomfort",
+    "text": "Does the dog show discomfort when the eye is touched?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_hardness",
+    "text": "Does the eye feel harder than normal?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_softness",
+    "text": "Does the eye feel softer than normal?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_glare",
+    "text": "Is there a visible glare in the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_drooping",
+    "text": "Are the eyelids drooping?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_turning_in",
+    "text": "Are the eyelids rolling inward?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_turning_out",
+    "text": "Are the eyelids rolling outward?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_thickening",
+    "text": "Are the eyelids thickened?",
+    "type": "yesno"
+  },
+  {
+    "id": "eyelid_scaling",
+    "text": "Is there scaling on the eyelids?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_debris",
+    "text": "Is there debris in the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "vision_inconsistency",
+    "text": "Does vision fluctuate between good and poor?",
+    "type": "yesno"
+  },
+  {
+    "id": "light_aversion",
+    "text": "Is the dog avoiding bright light?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_burning",
+    "text": "Is there burning around the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "nocturnal_discharge",
+    "text": "Is there discharge mainly at night?",
+    "type": "yesno"
+  },
+  {
+    "id": "excessive_tear",
+    "text": "Does the dog produce excessive tears?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_squish_sound",
+    "text": "Is there a squishing sound when pressing the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_tear_smell",
+    "text": "Does the eye discharge smell foul?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_color_change",
+    "text": "Has the eye color changed recently?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_pop_out",
+    "text": "Has the eye popped out of the socket previously?",
+    "type": "yesno"
+  },
+  {
+    "id": "contact_with_chemicals",
+    "text": "Has the eye contacted chemicals recently?",
+    "type": "yesno"
+  },
+  {
+    "id": "recent_travel",
+    "text": "Has the dog recently traveled to new areas?",
+    "type": "yesno"
+  },
+  {
+    "id": "ticks_around_eye",
+    "text": "Are there ticks around the eye area?",
+    "type": "yesno"
+  },
+  {
+    "id": "ear_infection",
+    "text": "Is there a concurrent ear infection?",
+    "type": "yesno"
+  },
+  {
+    "id": "respiratory_symptoms",
+    "text": "Does the dog have respiratory symptoms too?",
+    "type": "yesno"
+  },
+  {
+    "id": "paw_swelling",
+    "text": "Are the paws swollen from scratching?",
+    "type": "yesno"
+  },
+  {
+    "id": "weight_loss",
+    "text": "Has the dog lost weight recently?",
+    "type": "yesno"
+  },
+  {
+    "id": "appetite_change",
+    "text": "Has the dog's appetite changed?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_scarring",
+    "text": "Is there scarring on the eye surface?",
+    "type": "yesno"
+  },
+  {
+    "id": "whitish_eye",
+    "text": "Is the eye surface whitish or milky?",
+    "type": "yesno"
+  },
+  {
+    "id": "sharp_noise_response",
+    "text": "Does the dog react strongly to sharp noises?",
+    "type": "yesno"
+  },
+  {
+    "id": "neck_pain",
+    "text": "Is there neck pain when moving the head?",
+    "type": "yesno"
+  },
+  {
+    "id": "recent_vaccination",
+    "text": "Has the dog been vaccinated recently?",
+    "type": "yesno"
+  },
+  {
+    "id": "diabetes_history",
+    "text": "Does the dog have a history of diabetes?",
+    "type": "yesno"
+  },
+  {
+    "id": "immune_disease",
+    "text": "Is the dog diagnosed with an immune-mediated disease?",
+    "type": "yesno"
+  },
+  {
+    "id": "neurologic_signs",
+    "text": "Are there other neurologic signs present?",
+    "type": "yesno"
   }
 ]

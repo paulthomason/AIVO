@@ -127,6 +127,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 2,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 1,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 2,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 1,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 1,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 1,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 1,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Glaucoma": {
@@ -257,6 +497,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 4,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 2,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Keratoconjunctivitis sicca (Dry Eye)": {
@@ -387,6 +867,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 2,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 1,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Corneal Ulcer": {
@@ -517,6 +1237,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 3,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 1,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 2,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Uveitis": {
@@ -647,6 +1607,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 2,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": -1,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 2,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 1,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 2,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 1,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Proptosis": {
@@ -777,6 +1977,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 3,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 2,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 4,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Cherry Eye": {
@@ -907,6 +2347,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 1,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Eyelid Tumor": {
@@ -1037,6 +2717,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Entropion": {
@@ -1167,6 +3087,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 2,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 1,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 1,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Ectropion": {
@@ -1297,6 +3457,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 1,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 1,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Distichiasis": {
@@ -1427,6 +3827,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 2,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 2,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 3,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 1,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 1,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Retinal Detachment": {
@@ -1557,6 +4197,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 3,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 1,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 2,
+      "No": 0
     }
   },
   "Cataract": {
@@ -1687,6 +4567,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 3,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 2,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 2,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 3,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 3,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Orbital Abscess": {
@@ -1817,6 +4937,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 1,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 1,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 1,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 1,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 1,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 2,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 1,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 1,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Lens Luxation": {
@@ -1947,6 +5307,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 2,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 2,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Pannus": {
@@ -2077,6 +5677,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 1,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 1,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 2,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Hyphema": {
@@ -2207,6 +6047,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 2,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Hypopyon": {
@@ -2337,6 +6417,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 1,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Scleritis": {
@@ -2467,6 +6787,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 2,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 1,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 1,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 1,
+      "No": 0
     }
   },
   "Conjunctival Neoplasia": {
@@ -2597,6 +7157,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   },
   "Epiphora": {
@@ -2727,6 +7527,246 @@
       "Acute (<48h)": 0,
       "Subacute (2-7d)": 0,
       "Chronic (>1wk)": 0
+    },
+    "ocular_trauma_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_blinking": {
+      "Yes": 1,
+      "No": 0
+    },
+    "cloudy_lens": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_surgery": {
+      "Yes": 0,
+      "No": 0
+    },
+    "head_tilt": {
+      "Yes": 0,
+      "No": 0
+    },
+    "night_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "behavior_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ocular_pressure_test": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_staining": {
+      "Yes": 3,
+      "No": 0
+    },
+    "sudden_blindness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_dryness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_crusting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "squinting": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_rubbing": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bulging": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_shrinking": {
+      "Yes": 0,
+      "No": 0
+    },
+    "unequal_pupil": {
+      "Yes": 0,
+      "No": 0
+    },
+    "lens_dislocation": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_spasm": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_flickering": {
+      "Yes": 0,
+      "No": 0
+    },
+    "double_eyelashes": {
+      "Yes": 0,
+      "No": 0
+    },
+    "tear_drops": {
+      "Yes": 2,
+      "No": 0
+    },
+    "eye_bloodshot": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_growth": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_bruising": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_discomfort": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_hardness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_softness": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_glare": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_drooping": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_in": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_turning_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_thickening": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eyelid_scaling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_debris": {
+      "Yes": 0,
+      "No": 0
+    },
+    "vision_inconsistency": {
+      "Yes": 0,
+      "No": 0
+    },
+    "light_aversion": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_burning": {
+      "Yes": 0,
+      "No": 0
+    },
+    "nocturnal_discharge": {
+      "Yes": 0,
+      "No": 0
+    },
+    "excessive_tear": {
+      "Yes": 3,
+      "No": 0
+    },
+    "eye_squish_sound": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_tear_smell": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_color_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_pop_out": {
+      "Yes": 0,
+      "No": 0
+    },
+    "contact_with_chemicals": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_travel": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ticks_around_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "ear_infection": {
+      "Yes": 0,
+      "No": 0
+    },
+    "respiratory_symptoms": {
+      "Yes": 0,
+      "No": 0
+    },
+    "paw_swelling": {
+      "Yes": 0,
+      "No": 0
+    },
+    "weight_loss": {
+      "Yes": 0,
+      "No": 0
+    },
+    "appetite_change": {
+      "Yes": 0,
+      "No": 0
+    },
+    "eye_scarring": {
+      "Yes": 0,
+      "No": 0
+    },
+    "whitish_eye": {
+      "Yes": 0,
+      "No": 0
+    },
+    "sharp_noise_response": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neck_pain": {
+      "Yes": 0,
+      "No": 0
+    },
+    "recent_vaccination": {
+      "Yes": 0,
+      "No": 0
+    },
+    "diabetes_history": {
+      "Yes": 0,
+      "No": 0
+    },
+    "immune_disease": {
+      "Yes": 0,
+      "No": 0
+    },
+    "neurologic_signs": {
+      "Yes": 0,
+      "No": 0
     }
   }
 }
