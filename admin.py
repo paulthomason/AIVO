@@ -1,10 +1,24 @@
 import tkinter as tk
-from tkinter import simpledialog, messagebox, ttk
+"""Administrative interface for managing questions and diseases.
+
+This module provides a Tkinter-based GUI that allows subject matter
+experts to maintain the data files used by the diagnostic tool. No
+programming knowledge is required. Launch the application from the
+command line with ``python admin.py`` and use the tabs to edit
+questions, diseases and diagnosis weights. All changes are stored in
+JSON files under the ``data/`` directory.
+"""
+
+from tkinter import simpledialog, messagebox, ttk, TclError
+import os
+import sys
 import config
 from questions import YesNoQuestion, MultiChoiceQuestion
 
 
 class AdminUI(tk.Tk):
+    """Tkinter window used to edit the application's data files."""
+
     def __init__(self, storage):
         super().__init__()
         self.title("Admin Panel - Veterinary Ophthalmology")
@@ -39,6 +53,7 @@ class AdminUI(tk.Tk):
         self.config(menu=menubar)
 
     def create_widgets(self):
+        """Build the tabbed interface and main controls."""
         self.nb = ttk.Notebook(self)
         self.nb.pack(expand=1, fill=tk.BOTH)
 
@@ -48,6 +63,7 @@ class AdminUI(tk.Tk):
         tk.Button(self, text="Save All", command=self.save_all, font=("Arial", 14)).pack(pady=5)
 
     def create_questions_tab(self):
+        """Set up the Questions tab used to manage survey questions."""
         frm_q = tk.Frame(self.nb, bg=config.THEME_BG)
         self.nb.add(frm_q, text="Questions")
 
@@ -75,8 +91,10 @@ class AdminUI(tk.Tk):
             ("Delete", self.del_q),
         ]:
             tk.Button(btns_q, text=txt, command=cmd, font=("Arial", 16)).pack(fill=tk.X)
+        tk.Button(btns_q, text="Tips", command=self.show_q_tips, font=("Arial", 16)).pack(fill=tk.X, pady=(10, 0))
 
     def create_diseases_tab(self):
+        """Set up the Diseases tab for editing the disease list."""
         frm_d = tk.Frame(self.nb, bg=config.THEME_BG)
         self.nb.add(frm_d, text="Diseases")
 
@@ -97,8 +115,10 @@ class AdminUI(tk.Tk):
             ("Delete", self.del_d),
         ]:
             tk.Button(btns_d, text=txt, command=cmd, font=("Arial", 16)).pack(fill=tk.X)
+        tk.Button(btns_d, text="Tips", command=self.show_d_tips, font=("Arial", 16)).pack(fill=tk.X, pady=(10, 0))
 
     def create_weights_tab(self):
+        """Create the Weights tab for assigning scoring weights."""
         frm_w = tk.Frame(self.nb, bg=config.THEME_BG)
         self.nb.add(frm_w, text="Weights")
 
@@ -108,6 +128,19 @@ class AdminUI(tk.Tk):
             font=("Arial", 16),
             bg=config.THEME_BG,
         ).pack()
+        tk.Label(
+            frm_w,
+            text=(
+                "Weights express how strongly an answer suggests a disease. "
+                "Positive values increase the score while negative values "
+                "decrease it. The diagnosis totals the weights for all "
+                "answers and selects the disease with the highest score."
+            ),
+            font=("Arial", 12),
+            bg=config.THEME_BG,
+            wraplength=900,
+            justify=tk.LEFT,
+        ).pack(padx=6, pady=(0, 10))
         frm_top = tk.Frame(frm_w, bg=config.THEME_BG)
         frm_top.pack()
         self.disease_combo = ttk.Combobox(frm_top, values=self.diseases, font=("Arial", 14))
@@ -119,8 +152,10 @@ class AdminUI(tk.Tk):
         self.ans_frame = tk.Frame(frm_w, bg=config.THEME_BG)
         self.ans_frame.pack(pady=10)
         tk.Button(frm_w, text="Set Weight", command=self.set_weight, font=("Arial", 14)).pack()
+        tk.Button(frm_w, text="Tips", command=self.show_w_tips, font=("Arial", 14)).pack(pady=(10, 0))
 
     def refresh_q_list(self):
+        """Refresh the list of questions, applying any search filter."""
         self.q_listbox.delete(0, tk.END)
         search = self.q_search_var.get().lower() if hasattr(self, "q_search_var") else ""
         for q in self.questions:
@@ -130,11 +165,13 @@ class AdminUI(tk.Tk):
             self.q_listbox.insert(tk.END, txt)
 
     def refresh_d_list(self):
+        """Populate the diseases list box."""
         self.d_listbox.delete(0, tk.END)
         for d in self.diseases:
             self.d_listbox.insert(tk.END, d)
 
     def add_q(self):
+        """Prompt the user to create a new question."""
         qid = simpledialog.askstring("Question ID", "ID (no spaces):")
         if not qid:
             return
@@ -151,6 +188,7 @@ class AdminUI(tk.Tk):
         self.refresh_q_list()
 
     def edit_q(self):
+        """Edit the currently selected question."""
         idx = self.q_listbox.curselection()
         if not idx:
             return
@@ -165,6 +203,7 @@ class AdminUI(tk.Tk):
         self.refresh_q_list()
 
     def del_q(self):
+        """Remove the selected question after confirmation."""
         idx = self.q_listbox.curselection()
         if not idx:
             return
@@ -174,6 +213,7 @@ class AdminUI(tk.Tk):
         self.refresh_q_list()
 
     def move_q_up(self):
+        """Move the selected question up in the list."""
         idx = self.q_listbox.curselection()
         if not idx or idx[0] == 0:
             return
@@ -183,6 +223,7 @@ class AdminUI(tk.Tk):
         self.q_listbox.select_set(i - 1)
 
     def move_q_down(self):
+        """Move the selected question down in the list."""
         idx = self.q_listbox.curselection()
         if not idx or idx[0] >= len(self.questions) - 1:
             return
@@ -192,12 +233,14 @@ class AdminUI(tk.Tk):
         self.q_listbox.select_set(i + 1)
 
     def add_d(self):
+        """Add a new disease entry."""
         d = simpledialog.askstring("Add Disease", "Disease name:")
         if d and d not in self.diseases:
             self.diseases.append(d)
             self.refresh_d_list()
 
     def edit_d(self):
+        """Rename the selected disease."""
         idx = self.d_listbox.curselection()
         if not idx:
             return
@@ -208,6 +251,7 @@ class AdminUI(tk.Tk):
             self.refresh_d_list()
 
     def del_d(self):
+        """Delete the chosen disease after confirmation."""
         idx = self.d_listbox.curselection()
         if not idx:
             return
@@ -217,6 +261,7 @@ class AdminUI(tk.Tk):
         self.refresh_d_list()
 
     def move_d_up(self):
+        """Move the selected disease up."""
         idx = self.d_listbox.curselection()
         if not idx or idx[0] == 0:
             return
@@ -226,6 +271,7 @@ class AdminUI(tk.Tk):
         self.d_listbox.select_set(i - 1)
 
     def move_d_down(self):
+        """Move the selected disease down."""
         idx = self.d_listbox.curselection()
         if not idx or idx[0] >= len(self.diseases) - 1:
             return
@@ -235,6 +281,7 @@ class AdminUI(tk.Tk):
         self.d_listbox.select_set(i + 1)
 
     def refresh_weight_q(self):
+        """Display weight entry boxes for the selected disease/question."""
         for widget in self.ans_frame.winfo_children():
             widget.destroy()
         d = self.disease_combo.get()
@@ -257,6 +304,7 @@ class AdminUI(tk.Tk):
             self.weight_vars[c] = var
 
     def set_weight(self):
+        """Save the weights entered in the Weights tab."""
         d = self.disease_combo.get()
         qid = self.q_combo.get()
         if not d or not qid:
@@ -270,6 +318,7 @@ class AdminUI(tk.Tk):
         messagebox.showinfo("Saved", "Weight updated.")
 
     def save_all(self):
+        """Persist all modifications back to disk."""
         # Persist all modifications back to disk using the storage helpers.
         self.storage.save_questions(self.questions)
         self.storage.save_diseases(self.diseases)
@@ -277,15 +326,48 @@ class AdminUI(tk.Tk):
         messagebox.showinfo("Saved", "All data saved!")
 
     def show_about(self):
-        """Display an about dialog."""
+        """Display basic help and usage instructions."""
         messagebox.showinfo(
             "About",
-            "Admin panel for managing questions, diseases and weights",
+            """This admin panel lets you maintain the questions, diseases \
+and weighting model used by the diagnostic tool. Use the tabs above \
+to add or edit data and click \"Save All\" when finished.""",
+        )
+
+    def show_q_tips(self):
+        """Show usage tips for the Questions tab."""
+        messagebox.showinfo(
+            "Questions Tips",
+            "Use the Add button to create new questions. Move Up/Down reorders "
+            "the list. Remember to Save All when finished.",
+        )
+
+    def show_d_tips(self):
+        """Show usage tips for the Diseases tab."""
+        messagebox.showinfo(
+            "Diseases Tips",
+            "Add diseases with unique names. Use Edit to rename and Delete to remove.",
+        )
+
+    def show_w_tips(self):
+        """Show usage tips for the Weights tab."""
+        messagebox.showinfo(
+            "Weights Tips",
+            "Select a disease and question, enter numeric weights for each answer. "
+            "Higher numbers mean a stronger link to the disease while negative "
+            "weights reduce the likelihood. Click Set Weight to record your "
+            "values and Save All when finished.",
         )
 
 
 if __name__ == "__main__":
     import storage_json
 
-    app = AdminUI(storage_json)
+    if os.name != "nt" and not os.getenv("DISPLAY"):
+        sys.exit("Error: no DISPLAY environment variable set")
+    try:
+        app = AdminUI(storage_json)
+    except TclError as exc:
+        sys.exit(f"Error initializing Tkinter: {exc}")
+
     app.mainloop()
