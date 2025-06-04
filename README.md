@@ -17,12 +17,19 @@ python main.py
 ## Launching the Admin Interface
 
 The admin panel allows you to add or remove questions, manage diseases and
-adjust the weight mapping used by the diagnostic engine.
+adjust the weight mapping used by the diagnostic engine. A search box makes it
+easy to locate questions. Items can be reordered with **Move Up/Down** buttons
+and all changes are saved using the **File** menu.
 Launch it with:
 
 ```bash
 python admin.py
 ```
+
+## Debugging
+
+The diagnostic engine supports debug logging. Set the environment variable
+`AIVO_DEBUG=1` before running the UI or tests to see detailed log output.
 
 ## Dependencies
 
