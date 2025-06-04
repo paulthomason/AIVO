@@ -21,8 +21,8 @@ adjust the weight mapping used by the diagnostic engine. A search box makes it
 easy to locate questions. Items can be reordered with **Move Up/Down** buttons
 and all changes are saved using the **File** menu. A **Training** tab lets you
 quickly rate how strongly each question is associated with a disease using a
-0‑5 slider. Click **Record Rating** and then **Save All** to persist the new
-weights.
+0‑5 slider. Use **Random Pair** to pick a disease/question combination, then
+click **Record Rating** and **Save All** to persist the new weights.
 Launch it with:
 
 ```bash
