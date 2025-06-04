@@ -11,9 +11,13 @@ class AdminUI(tk.Tk):
         self.resizable(False, False)
         self.configure(bg=config.THEME_BG)
         self.storage = storage
+        # ``storage`` is expected to provide load/save helpers.  It previously
+        # returned raw dictionaries which caused numerous attribute errors
+        # throughout the UI.  ``load_questions`` now yields ``Question``
+        # objects so we can work with them directly.
         self.questions = storage.load_questions()
         self.diseases = storage.load_diseases()
-        self.diagnosis_model = storage.load_diagnosis_model()
+        self.diagnosis_model = storage.load_model()
         self.create_widgets()
 
     def create_widgets(self):
@@ -165,7 +169,8 @@ class AdminUI(tk.Tk):
         messagebox.showinfo("Saved", "Weight updated.")
 
     def save_all(self):
-        self.storage.save_questions([q.to_dict() for q in self.questions])
+        # Persist all modifications back to disk using the storage helpers.
+        self.storage.save_questions(self.questions)
         self.storage.save_diseases(self.diseases)
-        self.storage.save_diagnosis_model(self.diagnosis_model)
+        self.storage.save_model(self.diagnosis_model)
         messagebox.showinfo("Saved", "All data saved!")

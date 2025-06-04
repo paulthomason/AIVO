@@ -9,7 +9,8 @@ class DiagnosisUI:
         self.questions = load_questions()
         self.diseases = load_diseases()
         self.model = load_model()
-        self.question_ids = [q["id"] for q in self.questions]
+        # ``load_questions`` now returns ``Question`` objects
+        self.question_ids = [q.qid for q in self.questions]
         self.engine = DiagnosisEngine(self.diseases, self.question_ids, self.model)
         self.current_question = None
         self.init_ui()
@@ -33,8 +34,8 @@ class DiagnosisUI:
             widget.destroy()
 
     def display_question(self, question_id):
-        qdata = next(q for q in self.questions if q["id"] == question_id)
-        self.question_label.config(text=qdata["text"])
+        qdata = next(q for q in self.questions if q.qid == question_id)
+        self.question_label.config(text=qdata.text)
         self.clear_buttons()
         options = self.engine.get_possible_answers(question_id)
         for ans in options:
