@@ -3,7 +3,7 @@
 
 import os
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 
 import config
 from engine_rule import DiagnosisEngine
@@ -40,6 +40,17 @@ class DiagnosisUI:
         )
         self.master.resizable(False, False)
         self.master.configure(bg=config.THEME_BG, padx=20, pady=20)
+
+        menubar = tk.Menu(self.master)
+        help_menu = tk.Menu(menubar, tearoff=False)
+        help_menu.add_command(
+            label="About",
+            command=lambda: messagebox.showinfo(
+                "About", "Brief instructions and project info"
+            ),
+        )
+        menubar.add_cascade(label="Help", menu=help_menu)
+        self.master.config(menu=menubar)
 
         self.style = ttk.Style(self.master)
         self.style.configure(
