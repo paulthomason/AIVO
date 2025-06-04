@@ -183,6 +183,8 @@ class DiagnosisUI:
         if self.engine.is_done():
             self.question_label.config(text="Diagnosis complete.")
             self.clear_buttons()
+            # Clear interim progress to avoid repeating the final results
+            self.progress_label.config(text="")
             top = self.engine.get_top_diseases()
             text = "\n".join(
                 [f"{d}: {score:.2f}" for d, score in top]
