@@ -35,7 +35,9 @@ class DiagnosisUI:
 
     def init_ui(self):
         self.master.title("Vet Ophthalmology Diagnosis")
-        self.master.geometry("800x480")
+        self.master.geometry(
+            f"{config.DIAG_SCREEN_WIDTH}x{config.DIAG_SCREEN_HEIGHT}"
+        )
         self.master.resizable(False, False)
         self.master.configure(bg=config.THEME_BG, padx=20, pady=20)
 

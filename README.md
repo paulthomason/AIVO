@@ -46,6 +46,10 @@ structure remains valid.
 The diagnostic engine supports debug logging. Set the environment variable
 `AIVO_DEBUG=1` before running the UI or tests to see detailed log output.
 
+The size of the diagnosis window can also be adjusted with environment
+variables. Set `AIVO_DIAG_SCREEN_WIDTH` and `AIVO_DIAG_SCREEN_HEIGHT`
+to override the default 800x480 geometry used by the questionnaire UI.
+
 ## Dependencies
 
 - Python 3.9 or later

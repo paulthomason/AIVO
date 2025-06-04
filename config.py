@@ -26,6 +26,15 @@ DIAGNOSIS_MODEL_FILE = _get_env_or_default(
 # which caused attribute errors on start up.
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 768
+# Size of the diagnosis questionnaire window.  Can be overridden with
+# ``AIVO_DIAG_SCREEN_WIDTH`` and ``AIVO_DIAG_SCREEN_HEIGHT`` environment
+# variables which is helpful when running on small displays.
+DIAG_SCREEN_WIDTH = int(
+    _get_env_or_default("AIVO_DIAG_SCREEN_WIDTH", "800")
+)
+DIAG_SCREEN_HEIGHT = int(
+    _get_env_or_default("AIVO_DIAG_SCREEN_HEIGHT", "480")
+)
 THEME_BG = "#f0f0f0"
 
 # Font configuration used across the Tkinter interfaces. These
