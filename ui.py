@@ -1,5 +1,5 @@
 
-from tkinter import *
+import tkinter as tk
 from engine_rule import DiagnosisEngine
 from storage_json import load_questions, load_diseases, load_model
 
@@ -20,13 +20,13 @@ class DiagnosisUI:
         self.master.title("Vet Ophthalmology Diagnosis")
         self.master.geometry("800x480")
         self.master.resizable(False, False)
-        self.question_label = Label(self.master, text="", font=("Arial", 24), wraplength=760)
+        self.question_label = tk.Label(self.master, text="", font=("Arial", 24), wraplength=760)
         self.question_label.pack(pady=40)
-        self.button_frame = Frame(self.master)
+        self.button_frame = tk.Frame(self.master)
         self.button_frame.pack(pady=10)
-        self.progress_label = Label(self.master, text="", font=("Arial", 16))
+        self.progress_label = tk.Label(self.master, text="", font=("Arial", 16))
         self.progress_label.pack(pady=10)
-        self.result_label = Label(self.master, text="", font=("Arial", 18, "bold"))
+        self.result_label = tk.Label(self.master, text="", font=("Arial", 18, "bold"))
         self.result_label.pack(pady=20)
 
     def clear_buttons(self):
@@ -39,9 +39,9 @@ class DiagnosisUI:
         self.clear_buttons()
         options = self.engine.get_possible_answers(question_id)
         for ans in options:
-            b = Button(self.button_frame, text=ans, font=("Arial", 20), width=14, height=2,
+            b = tk.Button(self.button_frame, text=ans, font=("Arial", 20), width=14, height=2,
                        command=lambda a=ans: self.record_answer(a))
-            b.pack(side=LEFT, padx=10)
+            b.pack(side=tk.LEFT, padx=10)
 
     def record_answer(self, answer):
         qid = self.current_question
