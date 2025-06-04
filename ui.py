@@ -45,13 +45,18 @@ class DiagnosisUI:
         help_menu.add_command(
             label="About",
             command=lambda: messagebox.showinfo(
-                "About", "Brief instructions and project info"
+                "About",
+                """Veterinary Ophthalmology Diagnostic Tool\n\n"
+                "Answer each question to the best of your ability.\n"
+                "The system ranks likely diseases based on your responses.""",
             ),
         )
         menubar.add_cascade(label="Help", menu=help_menu)
         self.master.config(menu=menubar)
 
         self.style = ttk.Style(self.master)
+        if "clam" in self.style.theme_names():
+            self.style.theme_use("clam")
         self.style.configure(
             "Question.TLabel",
             font=config.FONT_LARGE,

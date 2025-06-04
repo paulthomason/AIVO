@@ -57,6 +57,6 @@ THEME_BG = "#f0f0f0"
 # Font configuration used across the Tkinter interfaces. These
 # consolidate the various hard-coded font tuples previously scattered
 # throughout the UI modules which made the look and feel inconsistent.
-FONT_LARGE = ("Arial", 24)
-FONT_MEDIUM = ("Arial", 16)
-FONT_SMALL = ("Arial", 14)
+FONT_LARGE = ("Helvetica", 24)
+FONT_MEDIUM = ("Helvetica", 16)
+FONT_SMALL = ("Helvetica", 14)
