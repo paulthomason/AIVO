@@ -423,9 +423,9 @@ class AdminUI(tk.Tk):
         """Display basic help and usage instructions."""
         messagebox.showinfo(
             "About",
-            """This admin panel lets you maintain the questions, diseases \
-and weighting model used by the diagnostic tool. Use the tabs above \
-to add or edit data and click \"Save All\" when finished.""",
+            """Administrative panel for AIVO\n\n"
+            "Use the tabs to manage questions, diseases and weighting factors. "
+            "Click 'Save All' to store your changes.""",
         )
 
     def show_q_tips(self):
