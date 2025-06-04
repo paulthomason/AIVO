@@ -1,9 +1,15 @@
-import os, sys
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-import math
-import pytest
-from storage_json import load_questions, load_diseases, load_model
-from engine_rule import DiagnosisEngine
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))  # noqa: E402
+
+import pytest  # noqa: E402
+from storage_json import (  # noqa: E402
+    load_questions,
+    load_diseases,
+    load_model,
+)
+from engine_rule import DiagnosisEngine  # noqa: E402
+
 
 @pytest.fixture
 def engine():

@@ -1,6 +1,7 @@
 import math
 from copy import deepcopy
 
+
 class DiagnosisEngine:
     def __init__(self, diseases, questions, model):
         self.diseases = diseases
