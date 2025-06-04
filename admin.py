@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import simpledialog, messagebox, ttk
 import config
 from questions import Question, YesNoQuestion, MultiChoiceQuestion
+from storage_json import JSONStorage
 
 class AdminUI(tk.Tk):
     def __init__(self, storage):
@@ -17,7 +18,7 @@ class AdminUI(tk.Tk):
         # objects so we can work with them directly.
         self.questions = storage.load_questions()
         self.diseases = storage.load_diseases()
-        self.diagnosis_model = storage.load_model()
+        self.diagnosis_model = storage.load_diagnosis_model()
         self.create_widgets()
 
     def create_widgets(self):
@@ -172,5 +173,11 @@ class AdminUI(tk.Tk):
         # Persist all modifications back to disk using the storage helpers.
         self.storage.save_questions(self.questions)
         self.storage.save_diseases(self.diseases)
-        self.storage.save_model(self.diagnosis_model)
+        self.storage.save_diagnosis_model(self.diagnosis_model)
         messagebox.showinfo("Saved", "All data saved!")
+
+
+if __name__ == "__main__":
+    storage = JSONStorage()
+    app = AdminUI(storage)
+    app.mainloop()
