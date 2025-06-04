@@ -34,6 +34,8 @@ class DiagnosisEngine:
         self.answered = {}
         self.remaining_questions = set(self.questions)
         self.history = []
+        self.eliminated = {d: 0 for d in self.diseases}
+        self._prev_scores = {}
         self.logger.debug("State reset")
 
     def answer_question(self, question, answer):
@@ -41,8 +43,16 @@ class DiagnosisEngine:
         self.remaining_questions.discard(question)
         self.history.append(question)
         for disease in self.diseases:
-            if question in self.model[disease]:
-                self.scores[disease] += self.model[disease][question].get(answer, 0)
+            if question not in self.model[disease]:
+                continue
+            weight = self.model[disease][question].get(answer, 0)
+            if weight == -1:
+                if self.eliminated[disease] == 0:
+                    self._prev_scores[disease] = self.scores[disease]
+                    self.scores[disease] = float('-inf')
+                self.eliminated[disease] += 1
+            elif self.eliminated[disease] == 0:
+                self.scores[disease] += weight
         self.logger.debug("Answered %s=%s", question, answer)
 
     def compute_entropy(self, scores=None):
@@ -56,10 +66,11 @@ class DiagnosisEngine:
         """
 
         scores = scores if scores is not None else self.scores
-        values = [max(0, s) for s in scores.values()]
+        active = [s for s in scores.values() if not math.isinf(s)]
+        values = [max(0, s) for s in active]
         total = sum(values)
-        if total == 0 or not values:
-            return math.log2(len(scores)) if len(scores) else 0
+        if total == 0 or not active:
+            return math.log2(len(active)) if len(active) else 0
         probs = [v / total for v in values]
         ent = -sum(p * math.log2(p) for p in probs if p > 0)
         self.logger.debug("Entropy computed: %.4f", ent)
@@ -74,8 +85,13 @@ class DiagnosisEngine:
     def simulate_answer(self, scores, question, answer):
         sim_scores = deepcopy(scores)
         for disease in self.diseases:
-            if question in self.model[disease]:
-                sim_scores[disease] += self.model[disease][question].get(answer, 0)
+            if question not in self.model[disease]:
+                continue
+            weight = self.model[disease][question].get(answer, 0)
+            if weight == -1:
+                sim_scores[disease] = float('-inf')
+            elif not math.isinf(sim_scores[disease]):
+                sim_scores[disease] += weight
         return sim_scores
 
     def information_gain_for_question(self, question):
@@ -106,16 +122,18 @@ class DiagnosisEngine:
         return best_q
 
     def get_top_diseases(self, n=3):
-        top = sorted(self.scores.items(), key=lambda x: x[1], reverse=True)[:n]
+        active = {d: s for d, s in self.scores.items() if not math.isinf(s)}
+        top = sorted(active.items(), key=lambda x: x[1], reverse=True)[:n]
         self.logger.debug("Top diseases: %s", top)
         return top
 
     def get_scores(self):
-        return dict(self.scores)
+        return {d: s for d, s in self.scores.items() if not math.isinf(s)}
 
     def get_progress(self):
-        max_score = max(self.scores.values()) if self.scores else 1
-        return {d: (s / max_score if max_score else 0) for d, s in self.scores.items()}
+        active = {d: s for d, s in self.scores.items() if not math.isinf(s)}
+        max_score = max(active.values()) if active else 1
+        return {d: (s / max_score if max_score else 0) for d, s in active.items()}
 
     def is_done(self, max_questions=25):
         done = len(self.answered) >= max_questions or not self.remaining_questions
@@ -143,8 +161,19 @@ class DiagnosisEngine:
         if answer is None:
             return None
         for disease in self.diseases:
-            if question in self.model[disease]:
-                self.scores[disease] -= self.model[disease][question].get(answer, 0)
+            if question not in self.model[disease]:
+                continue
+            weight = self.model[disease][question].get(answer, 0)
+            if weight == -1:
+                if self.eliminated[disease] > 0:
+                    self.eliminated[disease] -= 1
+                    if self.eliminated[disease] == 0:
+                        self.scores[disease] = self._prev_scores.pop(disease, 0)
+                        # Score restored to value prior to elimination
+                    else:
+                        self.scores[disease] = float('-inf')
+            elif self.eliminated[disease] == 0:
+                self.scores[disease] -= weight
         self.remaining_questions.add(question)
         self.logger.debug("Undid %s=%s", question, answer)
         return question

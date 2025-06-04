@@ -39,7 +39,7 @@ def test_select_best_question_progression(engine):
     assert first == 'red_eye'
     engine.answer_question(first, 'Yes')
     second = engine.select_best_question()
-    assert second == 'pain'
+    assert second == 'vision_loss'
 
 
 def test_entropy_with_zero_scores():
@@ -73,3 +73,12 @@ def test_undo_returns_previous_question(engine):
     assert qid == 'pain'
     assert engine.history == ['red_eye']
     assert 'pain' not in engine.answered
+
+
+def test_negative_weight_rules_out_disease(engine):
+    engine.answer_question('red_eye', 'No')
+    assert engine.scores['Conjunctivitis'] == float('-inf')
+    top = [d for d, _ in engine.get_top_diseases()]
+    assert 'Conjunctivitis' not in top
+    engine.undo_last_answer()
+    assert engine.scores['Conjunctivitis'] == 0
