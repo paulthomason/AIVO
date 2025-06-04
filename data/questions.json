@@ -15,21 +15,6 @@
     "type": "yesno"
   },
   {
-    "id": "sunken_eye",
-    "text": "Is the eye sunken (enophthalmos)?",
-    "type": "yesno"
-  },
-  {
-    "id": "onset_duration",
-    "text": "How long has the problem been present?",
-    "type": "multichoice",
-    "choices": [
-      "Acute (<48h)",
-      "Subacute (2-7d)",
-      "Chronic (>1wk)"
-    ]
-  },
-  {
     "id": "discharge",
     "text": "Is there any ocular discharge?",
     "type": "multichoice",
