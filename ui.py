@@ -87,12 +87,23 @@ class DiagnosisUI:
             style="Result.TLabel",
         )
         self.result_label.pack(pady=20)
+        self.nav_frame = ttk.Frame(self.master)
+        self.nav_frame.pack(pady=10)
+        self.back_button = ttk.Button(
+            self.nav_frame,
+            text="Back",
+            command=self.go_back,
+            style="Answer.TButton",
+        )
+        self.back_button.pack(side=tk.LEFT, padx=5)
         self.restart_button = ttk.Button(
-            self.master,
+            self.nav_frame,
             text="Restart",
             command=self.restart,
             style="Answer.TButton",
         )
+        self.restart_button.pack(side=tk.LEFT, padx=5)
+        self.back_button.pack_forget()
         self.restart_button.pack_forget()
 
     def clear_buttons(self):
@@ -108,6 +119,7 @@ class DiagnosisUI:
         self.qprogress_label.config(text="")
         self.progress_bar['value'] = 0
         self.restart_button.pack_forget()
+        self.back_button.pack_forget()
         self.next_question()
 
     def display_question(self, question_id):
@@ -130,6 +142,17 @@ class DiagnosisUI:
         self.update_progress()
         self.next_question()
 
+    def go_back(self):
+        """Undo the last answer and show the previous question."""
+        qid = self.engine.undo_last_answer()
+        if qid is None:
+            return
+        self.result_label.config(text="")
+        self.restart_button.pack_forget()
+        self.current_question = qid
+        self.display_question(qid)
+        self.update_progress()
+
     def update_progress(self):
         scores = self.engine.get_scores()
         top = self.engine.get_top_diseases()
@@ -141,6 +164,10 @@ class DiagnosisUI:
         )
         percent = answered / self.total_questions * 100
         self.progress_bar['value'] = percent
+        if self.engine.history:
+            self.back_button.pack(side=tk.LEFT, padx=5)
+        else:
+            self.back_button.pack_forget()
 
     def next_question(self):
         if self.engine.is_done():
@@ -156,7 +183,9 @@ class DiagnosisUI:
                 text=f"Question {answered} of {self.total_questions}"
             )
             self.progress_bar['value'] = 100
-            self.restart_button.pack(pady=10)
+            self.restart_button.pack(side=tk.LEFT, padx=5)
+            if self.engine.history:
+                self.back_button.pack(side=tk.LEFT, padx=5)
             return
         qid = self.engine.select_best_question()
         if not qid:

@@ -17,6 +17,7 @@ class DiagnosisEngine:
         if self.debug and not logging.getLogger().handlers:
             logging.basicConfig(level=logging.DEBUG)
         self.logger.debug("Engine initialised")
+        self.history = []
         self._validate_model()
         self.reset()
 
@@ -32,11 +33,13 @@ class DiagnosisEngine:
         self.scores = {d: 0 for d in self.diseases}
         self.answered = {}
         self.remaining_questions = set(self.questions)
+        self.history = []
         self.logger.debug("State reset")
 
     def answer_question(self, question, answer):
         self.answered[question] = answer
         self.remaining_questions.discard(question)
+        self.history.append(question)
         for disease in self.diseases:
             if question in self.model[disease]:
                 self.scores[disease] += self.model[disease][question].get(answer, 0)
@@ -124,6 +127,24 @@ class DiagnosisEngine:
             "scores": deepcopy(self.scores),
             "answered": deepcopy(self.answered),
             "remaining_questions": list(self.remaining_questions),
+            "history": list(self.history),
         }
         self.logger.debug("Current state: %s", state)
         return state
+
+    def undo_last_answer(self):
+        """Revert the most recently answered question."""
+
+        if not self.history:
+            self.logger.debug("Undo called with empty history")
+            return None
+        question = self.history.pop()
+        answer = self.answered.pop(question, None)
+        if answer is None:
+            return None
+        for disease in self.diseases:
+            if question in self.model[disease]:
+                self.scores[disease] -= self.model[disease][question].get(answer, 0)
+        self.remaining_questions.add(question)
+        self.logger.debug("Undid %s=%s", question, answer)
+        return question

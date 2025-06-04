@@ -52,3 +52,24 @@ def test_model_missing_weights_logs_warning(caplog):
     caplog.set_level(logging.WARNING)
     DiagnosisEngine(['D1'], ['q1', 'q2'], {'D1': {'q1': {'Yes': 1}}})
     assert any('missing weights' in r.message for r in caplog.records)
+
+
+def test_undo_reverts_scores_and_history(engine):
+    engine.answer_question('red_eye', 'Yes')
+    assert engine.history == ['red_eye']
+    engine.undo_last_answer()
+    assert engine.history == []
+    assert 'red_eye' not in engine.answered
+    assert 'red_eye' in engine.remaining_questions
+    for val in engine.scores.values():
+        assert val == 0
+
+
+def test_undo_returns_previous_question(engine):
+    engine.answer_question('red_eye', 'Yes')
+    engine.answer_question('pain', 'No')
+    assert engine.history == ['red_eye', 'pain']
+    qid = engine.undo_last_answer()
+    assert qid == 'pain'
+    assert engine.history == ['red_eye']
+    assert 'pain' not in engine.answered
