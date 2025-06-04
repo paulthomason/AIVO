@@ -12,6 +12,8 @@ JSON files under the ``data/`` directory.
 from tkinter import simpledialog, messagebox, ttk, TclError
 import os
 import sys
+import random
+import logging
 import config
 from questions import YesNoQuestion, MultiChoiceQuestion
 
@@ -21,6 +23,7 @@ class AdminUI(tk.Tk):
 
     def __init__(self, storage):
         super().__init__()
+        self.logger = logging.getLogger(self.__class__.__name__)
         self.title("Admin Panel - Veterinary Ophthalmology")
         self.geometry(f"{config.SCREEN_WIDTH}x{config.SCREEN_HEIGHT}")
         self.resizable(False, False)
@@ -187,6 +190,8 @@ class AdminUI(tk.Tk):
         self.rating_scale = tk.Scale(frm_t, from_=0, to=5, orient=tk.HORIZONTAL, variable=self.rating_var, length=400)
         self.rating_scale.pack()
 
+        tk.Button(frm_t, text="Random Pair", command=self.random_training_pair, font=config.FONT_SMALL).pack(pady=(5, 0))
+
         tk.Button(frm_t, text="Record Rating", command=self.save_training_rating, font=config.FONT_SMALL).pack(pady=(5, 0))
         tk.Button(frm_t, text="Tips", command=self.show_training_tips, font=config.FONT_SMALL).pack(pady=(10, 0))
 
@@ -231,6 +236,16 @@ class AdminUI(tk.Tk):
             "Select a disease and question then drag the slider to set how strongly the question suggests the disease."
             " Click Record Rating to store the value and Save All when finished.",
         )
+
+    def random_training_pair(self):
+        """Pick a random disease/question pair for training."""
+        disease = random.choice(self.diseases)
+        question = random.choice([q.qid for q in self.questions])
+        self.train_disease.set(disease)
+        self.train_question.set(question)
+        self.update_training_prompt()
+        self.rating_var.set(0)
+        self.logger.info("Random training pair: %s / %s", disease, question)
 
     def refresh_q_list(self):
         """Refresh the list of questions, applying any search filter."""
