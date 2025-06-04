@@ -1,7 +1,6 @@
 
 """Graphical user interface for the diagnostic questionnaire."""
 
-import os
 import tkinter as tk
 from tkinter import ttk, messagebox
 
@@ -21,7 +20,7 @@ class DiagnosisUI:
         # ``load_questions`` now returns ``Question`` objects
         self.question_ids = [q.qid for q in self.questions]
         if debug is None:
-            debug = bool(os.getenv("AIVO_DEBUG"))
+            debug = config.get_env_bool("AIVO_DEBUG")
         self.engine = DiagnosisEngine(
             self.diseases,
             self.question_ids,
