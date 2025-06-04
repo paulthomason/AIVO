@@ -165,7 +165,7 @@ class AdminUI(tk.Tk):
 
         tk.Label(
             frm_t,
-            text="Rate how strongly a question indicates a disease (0 = none, 5 = strong).",
+            text="Rate how strongly a question indicates a disease (-1 = rules out, 0 = none, 5 = strong).",
             font=config.FONT_SMALL,
             bg=config.THEME_BG,
             wraplength=900,
@@ -187,7 +187,7 @@ class AdminUI(tk.Tk):
         self.training_prompt_lbl.pack(pady=10)
 
         self.rating_var = tk.IntVar(value=0)
-        self.rating_scale = tk.Scale(frm_t, from_=0, to=5, orient=tk.HORIZONTAL, variable=self.rating_var, length=400)
+        self.rating_scale = tk.Scale(frm_t, from_=-1, to=5, orient=tk.HORIZONTAL, variable=self.rating_var, length=400)
         self.rating_scale.pack()
 
         tk.Button(frm_t, text="Random Pair", command=self.random_training_pair, font=config.FONT_SMALL).pack(pady=(5, 0))
@@ -234,6 +234,7 @@ class AdminUI(tk.Tk):
         messagebox.showinfo(
             "Training Tips",
             "Select a disease and question then drag the slider to set how strongly the question suggests the disease."
+            " Use -1 when the answer would rule out the disease."
             " Click Record Rating to store the value and Save All when finished.",
         )
 
