@@ -1,3 +1,4 @@
+
 class Question:
     def __init__(self, qid, text, qtype, choices=None):
         self.qid = qid
@@ -24,9 +25,11 @@ class Question:
             d["choices"] = self.choices
         return d
 
+
 class YesNoQuestion(Question):
     def __init__(self, qid, text):
         super().__init__(qid, text, "yesno", ["Yes", "No"])
+
 
 class MultiChoiceQuestion(Question):
     def __init__(self, qid, text, choices):

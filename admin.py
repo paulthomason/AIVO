@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox, ttk
 import config
-from questions import Question, YesNoQuestion, MultiChoiceQuestion
+from questions import YesNoQuestion, MultiChoiceQuestion
+
 
 class AdminUI(tk.Tk):
     def __init__(self, storage):
@@ -27,42 +28,95 @@ class AdminUI(tk.Tk):
         frm_q = tk.Frame(nb, bg=config.THEME_BG)
         nb.add(frm_q, text="Questions")
         self.q_listbox = tk.Listbox(frm_q, font=("Arial", 16), width=55)
-        self.q_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4)
-        q_scroll = tk.Scrollbar(frm_q, orient=tk.VERTICAL, command=self.q_listbox.yview)
+        self.q_listbox.pack(
+            side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4
+        )
+        q_scroll = tk.Scrollbar(
+            frm_q, orient=tk.VERTICAL, command=self.q_listbox.yview
+        )
         q_scroll.pack(side=tk.LEFT, fill=tk.Y)
         self.q_listbox.config(yscrollcommand=q_scroll.set)
         self.refresh_q_list()
         btns_q = tk.Frame(frm_q, bg=config.THEME_BG)
         btns_q.pack(side=tk.LEFT, padx=6)
-        tk.Button(btns_q, text="Add", command=self.add_q, font=("Arial", 16)).pack(fill=tk.X)
-        tk.Button(btns_q, text="Edit", command=self.edit_q, font=("Arial", 16)).pack(fill=tk.X)
-        tk.Button(btns_q, text="Delete", command=self.del_q, font=("Arial", 16)).pack(fill=tk.X)
+        tk.Button(
+            btns_q,
+            text="Add",
+            command=self.add_q,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_q,
+            text="Edit",
+            command=self.edit_q,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_q,
+            text="Delete",
+            command=self.del_q,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
         # Diseases tab
         frm_d = tk.Frame(nb, bg=config.THEME_BG)
         nb.add(frm_d, text="Diseases")
         self.d_listbox = tk.Listbox(frm_d, font=("Arial", 16), width=35)
-        self.d_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4)
-        d_scroll = tk.Scrollbar(frm_d, orient=tk.VERTICAL, command=self.d_listbox.yview)
+        self.d_listbox.pack(
+            side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4
+        )
+        d_scroll = tk.Scrollbar(
+            frm_d, orient=tk.VERTICAL, command=self.d_listbox.yview
+        )
         d_scroll.pack(side=tk.LEFT, fill=tk.Y)
         self.d_listbox.config(yscrollcommand=d_scroll.set)
         self.refresh_d_list()
         btns_d = tk.Frame(frm_d, bg=config.THEME_BG)
         btns_d.pack(side=tk.LEFT, padx=6)
-        tk.Button(btns_d, text="Add", command=self.add_d, font=("Arial", 16)).pack(fill=tk.X)
-        tk.Button(btns_d, text="Edit", command=self.edit_d, font=("Arial", 16)).pack(fill=tk.X)
-        tk.Button(btns_d, text="Delete", command=self.del_d, font=("Arial", 16)).pack(fill=tk.X)
+        tk.Button(
+            btns_d,
+            text="Add",
+            command=self.add_d,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_d,
+            text="Edit",
+            command=self.edit_d,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
+        tk.Button(
+            btns_d,
+            text="Delete",
+            command=self.del_d,
+            font=("Arial", 16),
+        ).pack(fill=tk.X)
         # Weights tab
         frm_w = tk.Frame(nb, bg=config.THEME_BG)
         nb.add(frm_w, text="Weights")
-        tk.Label(frm_w, text="Select disease, question, and assign weights per answer.", font=("Arial", 16), bg=config.THEME_BG).pack()
+        tk.Label(
+            frm_w,
+            text="Select disease, question, and assign weights per answer.",
+            font=("Arial", 16),
+            bg=config.THEME_BG,
+        ).pack()
         frm_top = tk.Frame(frm_w, bg=config.THEME_BG)
         frm_top.pack()
-        self.disease_combo = ttk.Combobox(frm_top, values=self.diseases, font=("Arial", 14))
+        self.disease_combo = ttk.Combobox(
+            frm_top, values=self.diseases, font=("Arial", 14)
+        )
         self.disease_combo.pack(side=tk.LEFT, padx=7)
-        self.disease_combo.bind("<<ComboboxSelected>>", lambda e: self.refresh_weight_q())
-        self.q_combo = ttk.Combobox(frm_top, values=[q.qid for q in self.questions], font=("Arial", 14))
+        self.disease_combo.bind(
+            "<<ComboboxSelected>>",
+            lambda event: self.refresh_weight_q(),
+        )
+        self.q_combo = ttk.Combobox(
+            frm_top, values=[q.qid for q in self.questions], font=("Arial", 14)
+        )
         self.q_combo.pack(side=tk.LEFT, padx=7)
-        self.q_combo.bind("<<ComboboxSelected>>", lambda e: self.refresh_weight_q())
+        self.q_combo.bind(
+            "<<ComboboxSelected>>",
+            lambda event: self.refresh_weight_q(),
+        )
         self.ans_frame = tk.Frame(frm_w, bg=config.THEME_BG)
         self.ans_frame.pack(pady=10)
         tk.Button(frm_w, text="Set Weight", command=self.set_weight, font=("Arial", 14)).pack()

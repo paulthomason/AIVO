@@ -4,16 +4,19 @@ from typing import Iterable, List
 from config import QUESTIONS_FILE, DISEASES_FILE, DIAGNOSIS_MODEL_FILE
 from questions import Question
 
+
 def load_questions() -> List[Question]:
     """Load questions from disk and return ``Question`` objects."""
     with open(QUESTIONS_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
     return [Question.from_dict(q) for q in data]
 
+
 def load_diseases() -> List[str]:
     """Return the list of diseases from disk."""
     with open(DISEASES_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def load_model() -> dict:
     """Return the diagnosis model mapping."""
