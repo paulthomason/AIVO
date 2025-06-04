@@ -26,6 +26,18 @@ Launch it with:
 python admin.py
 ```
 
+## Data Format
+
+All application data lives in the `data/` directory. It contains three JSON
+files:
+
+- `questions.json` – list of questions with optional multiple choice options.
+- `diseases.json` – array of disease names.
+- `diagnosis_model.json` – nested mapping of disease -> question -> answer -> weight.
+
+You can modify these files directly or use the admin interface which ensures the
+structure remains valid.
+
 ## Debugging
 
 The diagnostic engine supports debug logging. Set the environment variable
@@ -38,3 +50,9 @@ The diagnostic engine supports debug logging. Set the environment variable
   (it is included with most standard Python distributions)
 
 No third‑party packages are required.
+
+## Contributing
+
+Pull requests are welcome! Please ensure that unit tests continue to pass by
+running `pytest` before submitting. Feel free to open issues if you encounter
+problems or have suggestions for improvement.

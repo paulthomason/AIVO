@@ -17,7 +17,16 @@ class DiagnosisEngine:
         if self.debug and not logging.getLogger().handlers:
             logging.basicConfig(level=logging.DEBUG)
         self.logger.debug("Engine initialised")
+        self._validate_model()
         self.reset()
+
+    def _validate_model(self) -> None:
+        """Log a warning if ``model`` lacks weights for known questions."""
+
+        for d in self.diseases:
+            for q in self.questions:
+                if q not in self.model.get(d, {}):
+                    self.logger.warning("Model missing weights for %s/%s", d, q)
 
     def reset(self):
         self.scores = {d: 0 for d in self.diseases}
@@ -34,6 +43,15 @@ class DiagnosisEngine:
         self.logger.debug("Answered %s=%s", question, answer)
 
     def compute_entropy(self, scores=None):
+        """Return the Shannon entropy of ``scores``.
+
+        Parameters
+        ----------
+        scores: dict or None
+            Mapping of disease name to numeric score. If ``None`` the current
+            engine scores are used.
+        """
+
         scores = scores if scores is not None else self.scores
         values = [max(0, s) for s in scores.values()]
         total = sum(values)
@@ -58,6 +76,8 @@ class DiagnosisEngine:
         return sim_scores
 
     def information_gain_for_question(self, question):
+        """Calculate expected information gain for ``question``."""
+
         answers = self.get_possible_answers(question)
         entropies = []
         num_answers = len(answers)
