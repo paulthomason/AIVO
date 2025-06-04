@@ -1,15 +1,15 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox, ttk
-import config
+from config import SCREEN_WIDTH, SCREEN_HEIGHT, THEME_BG
 from questions import Question, YesNoQuestion, MultiChoiceQuestion
 
 class AdminUI(tk.Tk):
     def __init__(self, storage):
         super().__init__()
         self.title("Admin Panel - Veterinary Ophthalmology")
-        self.geometry(f"{config.SCREEN_WIDTH}x{config.SCREEN_HEIGHT}")
+        self.geometry(f"{SCREEN_WIDTH}x{SCREEN_HEIGHT}")
         self.resizable(False, False)
-        self.configure(bg=config.THEME_BG)
+        self.configure(bg=THEME_BG)
         self.storage = storage
         # ``storage`` is expected to provide load/save helpers.  It previously
         # returned raw dictionaries which caused numerous attribute errors
@@ -24,32 +24,32 @@ class AdminUI(tk.Tk):
         nb = ttk.Notebook(self)
         nb.pack(expand=1, fill=tk.BOTH)
         # Questions tab
-        frm_q = tk.Frame(nb, bg=config.THEME_BG)
+        frm_q = tk.Frame(nb, bg=THEME_BG)
         nb.add(frm_q, text="Questions")
         self.q_listbox = tk.Listbox(frm_q, font=("Arial", 16), width=55)
         self.q_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4)
         self.refresh_q_list()
-        btns_q = tk.Frame(frm_q, bg=config.THEME_BG)
+        btns_q = tk.Frame(frm_q, bg=THEME_BG)
         btns_q.pack(side=tk.LEFT, padx=6)
         tk.Button(btns_q, text="Add", command=self.add_q, font=("Arial", 16)).pack(fill=tk.X)
         tk.Button(btns_q, text="Edit", command=self.edit_q, font=("Arial", 16)).pack(fill=tk.X)
         tk.Button(btns_q, text="Delete", command=self.del_q, font=("Arial", 16)).pack(fill=tk.X)
         # Diseases tab
-        frm_d = tk.Frame(nb, bg=config.THEME_BG)
+        frm_d = tk.Frame(nb, bg=THEME_BG)
         nb.add(frm_d, text="Diseases")
         self.d_listbox = tk.Listbox(frm_d, font=("Arial", 16), width=35)
         self.d_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=6, pady=4)
         self.refresh_d_list()
-        btns_d = tk.Frame(frm_d, bg=config.THEME_BG)
+        btns_d = tk.Frame(frm_d, bg=THEME_BG)
         btns_d.pack(side=tk.LEFT, padx=6)
         tk.Button(btns_d, text="Add", command=self.add_d, font=("Arial", 16)).pack(fill=tk.X)
         tk.Button(btns_d, text="Edit", command=self.edit_d, font=("Arial", 16)).pack(fill=tk.X)
         tk.Button(btns_d, text="Delete", command=self.del_d, font=("Arial", 16)).pack(fill=tk.X)
         # Weights tab
-        frm_w = tk.Frame(nb, bg=config.THEME_BG)
+        frm_w = tk.Frame(nb, bg=THEME_BG)
         nb.add(frm_w, text="Weights")
-        tk.Label(frm_w, text="Select disease, question, and assign weights per answer.", font=("Arial", 16), bg=config.THEME_BG).pack()
-        frm_top = tk.Frame(frm_w, bg=config.THEME_BG)
+        tk.Label(frm_w, text="Select disease, question, and assign weights per answer.", font=("Arial", 16), bg=THEME_BG).pack()
+        frm_top = tk.Frame(frm_w, bg=THEME_BG)
         frm_top.pack()
         self.disease_combo = ttk.Combobox(frm_top, values=self.diseases, font=("Arial", 14))
         self.disease_combo.pack(side=tk.LEFT, padx=7)
@@ -57,7 +57,7 @@ class AdminUI(tk.Tk):
         self.q_combo = ttk.Combobox(frm_top, values=[q.qid for q in self.questions], font=("Arial", 14))
         self.q_combo.pack(side=tk.LEFT, padx=7)
         self.q_combo.bind("<<ComboboxSelected>>", lambda e: self.refresh_weight_q())
-        self.ans_frame = tk.Frame(frm_w, bg=config.THEME_BG)
+        self.ans_frame = tk.Frame(frm_w, bg=THEME_BG)
         self.ans_frame.pack(pady=10)
         tk.Button(frm_w, text="Set Weight", command=self.set_weight, font=("Arial", 14)).pack()
         tk.Button(self, text="Save All", command=self.save_all, font=("Arial", 14)).pack(pady=5)
@@ -151,7 +151,7 @@ class AdminUI(tk.Tk):
         self.weight_vars = {}
         for c in choices:
             var = tk.IntVar(value=wdict.get(c, 0))
-            tk.Label(self.ans_frame, text=c, font=("Arial", 14), bg=config.THEME_BG).pack()
+            tk.Label(self.ans_frame, text=c, font=("Arial", 14), bg=THEME_BG).pack()
             tk.Entry(self.ans_frame, textvariable=var, font=("Arial", 14), width=8).pack()
             self.weight_vars[c] = var
 
