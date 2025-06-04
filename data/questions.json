@@ -1,0 +1,180 @@
+[
+  {
+    "id": "red_eye",
+    "text": "Is the eye red?",
+    "type": "yesno"
+  },
+  {
+    "id": "swollen_eye",
+    "text": "Is the eye swollen or puffy?",
+    "type": "yesno"
+  },
+  {
+    "id": "protrusion",
+    "text": "Is the eyeball protruding (exophthalmos)?",
+    "type": "yesno"
+  },
+  {
+    "id": "sunken_eye",
+    "text": "Is the eye sunken (enophthalmos)?",
+    "type": "yesno"
+  },
+  {
+    "id": "onset_duration",
+    "text": "How long has the problem been present?",
+    "type": "multichoice",
+    "choices": [
+      "Acute (<48h)",
+      "Subacute (2-7d)",
+      "Chronic (>1wk)"
+    ]
+  },
+  {
+    "id": "discharge",
+    "text": "Is there any ocular discharge?",
+    "type": "multichoice",
+    "choices": [
+      "None",
+      "Serous",
+      "Mucopurulent",
+      "Bloody"
+    ]
+  },
+  {
+    "id": "discharge_amount",
+    "text": "Amount of discharge?",
+    "type": "multichoice",
+    "choices": [
+      "None",
+      "Mild",
+      "Moderate",
+      "Profuse"
+    ]
+  },
+  {
+    "id": "pain",
+    "text": "Does the dog seem to be in pain (e.g., squinting, pawing at eye)?",
+    "type": "yesno"
+  },
+  {
+    "id": "photophobia",
+    "text": "Is the dog sensitive to light (photophobic)?",
+    "type": "yesno"
+  },
+  {
+    "id": "blepharospasm",
+    "text": "Is the dog squinting or blinking excessively (blepharospasm)?",
+    "type": "yesno"
+  },
+  {
+    "id": "vision_loss",
+    "text": "Is there evidence of vision loss?",
+    "type": "yesno"
+  },
+  {
+    "id": "corneal_opacity",
+    "text": "Is the cornea cloudy or opaque?",
+    "type": "yesno"
+  },
+  {
+    "id": "corneal_edema",
+    "text": "Is there bluish corneal swelling (corneal edema)?",
+    "type": "yesno"
+  },
+  {
+    "id": "corneal_ulcer",
+    "text": "Is there evidence of a corneal ulcer?",
+    "type": "yesno"
+  },
+  {
+    "id": "corneal_vascularization",
+    "text": "Are there new blood vessels on the cornea?",
+    "type": "yesno"
+  },
+  {
+    "id": "hypopyon",
+    "text": "Is there white/yellow fluid in the anterior chamber (hypopyon)?",
+    "type": "yesno"
+  },
+  {
+    "id": "hyphema",
+    "text": "Is there blood in the anterior chamber (hyphema)?",
+    "type": "yesno"
+  },
+  {
+    "id": "iris_color",
+    "text": "Has the color of the iris changed?",
+    "type": "yesno"
+  },
+  {
+    "id": "pupil_size",
+    "text": "What is the pupil size?",
+    "type": "multichoice",
+    "choices": [
+      "Normal",
+      "Constricted",
+      "Dilated",
+      "Irregular"
+    ]
+  },
+  {
+    "id": "pupil_response",
+    "text": "Do the pupils respond to light?",
+    "type": "multichoice",
+    "choices": [
+      "Normal",
+      "Sluggish",
+      "No response"
+    ]
+  },
+  {
+    "id": "tearing",
+    "text": "Is there excessive tearing?",
+    "type": "yesno"
+  },
+  {
+    "id": "third_eyelid",
+    "text": "Is the third eyelid elevated?",
+    "type": "yesno"
+  },
+  {
+    "id": "mass_eyelid",
+    "text": "Is there a mass on the eyelid?",
+    "type": "yesno"
+  },
+  {
+    "id": "mass_conjunctiva",
+    "text": "Is there a mass on the conjunctiva?",
+    "type": "yesno"
+  },
+  {
+    "id": "chemosis",
+    "text": "Is there swelling of the conjunctiva (chemosis)?",
+    "type": "yesno"
+  },
+  {
+    "id": "bleeding",
+    "text": "Is there any bleeding from the eye?",
+    "type": "yesno"
+  },
+  {
+    "id": "eye_movement",
+    "text": "Are abnormal eye movements present?",
+    "type": "yesno"
+  },
+  {
+    "id": "systemic_signs",
+    "text": "Are there systemic signs (lethargy, fever)?",
+    "type": "yesno"
+  },
+  {
+    "id": "bilateral",
+    "text": "Are both eyes affected?",
+    "type": "yesno"
+  },
+  {
+    "id": "breed_predisposition",
+    "text": "Is the dog a breed predisposed to ocular disease (e.g., brachycephalic)?",
+    "type": "yesno"
+  }
+]
