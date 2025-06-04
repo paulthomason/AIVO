@@ -9,6 +9,8 @@ is included for editing questions, diseases and diagnosis weights.
 
 Execute `main.py` with Python. A window will guide you through a set of
 questions and display the most likely diseases at the end.
+The window includes a **Help** menu that opens an About dialog with
+basic instructions.
 
 ```bash
 python main.py
