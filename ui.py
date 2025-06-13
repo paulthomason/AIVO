@@ -4,6 +4,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+from typing import Optional
+
 import config
 from engine_rule import DiagnosisEngine
 from storage_json import load_questions, load_diseases, load_model
@@ -12,7 +14,7 @@ from storage_json import load_questions, load_diseases, load_model
 class DiagnosisUI:
     """Interactive Tkinter UI driving ``DiagnosisEngine``."""
 
-    def __init__(self, master, *, debug: bool | None = None):
+    def __init__(self, master, *, debug: Optional[bool] = None):
         self.master = master
         self.questions = load_questions()
         self.diseases = load_diseases()
