@@ -61,6 +61,15 @@ to override the default 800x480 geometry used by the questionnaire UI.
 
 No third‑party packages are required.
 
+## Using the Web Version
+A lightweight HTML5/JavaScript front end is available under the `web/` folder. It uses the same JSON data files and runs entirely in the browser. Launch a local web server and open `web/index.html` in your browser:
+
+```bash
+python -m http.server 8000
+# then navigate to http://localhost:8000/web/index.html
+```
+
+
 ## Contributing
 
 Pull requests are welcome! Please ensure that unit tests continue to pass by
